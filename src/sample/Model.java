@@ -5,7 +5,7 @@ package sample;
  */
 public class Model {
 
-    public long calculation (long a, long b, String operator) { //prinimaet dva 4isla
+    public double calculation (double a, double b, String operator) { //prinimaet dva 4isla
         switch (operator){
             case "+":
                 return a+b;

@@ -5,14 +5,16 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
+import java.awt.geom.Arc2D;
+
 
 public class Controller {
 
     @FXML
     private Text output;
-    private long num1=0;
-    private long num2=0;
-    private long num3=0;
+    private double num1=0;
+    private double num2=0;
+    private double num3=0;
 
     private boolean start = true;
     private String operator = "";
@@ -36,7 +38,7 @@ public class Controller {
         if(!"=".equals(value)){
             if(!operator.isEmpty()) return;
             operator = value;
-            num1 = Long.parseLong(output.getText());
+            num1 = Double.parseDouble(output.getText());
             output.setText("");
         }
         else{
