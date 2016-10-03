@@ -43,7 +43,7 @@ public class Controller {
         }
         else{
             if(operator.isEmpty()) return;
-            output.setText(String.valueOf(model.calculation(num1, Long.parseLong(output.getText()), operator)));
+            output.setText(String.valueOf(model.calculation(num1, Double.parseDouble(output.getText()), operator)));
             operator = "";
             start = true;
         }
